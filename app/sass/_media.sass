@@ -3,53 +3,350 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1350px)
+  .author-img
+    max-width: 400px
+
+  .author-content
+    margin: 0 0 30px
+
+  .advantages:before
+    width: 260px
+    height: 300px
+
+  .strengthening-img
+    width: 840px
+
+  .strengthening:before
+    right: 100px
+
+/* Medium Devices, Desktops */
 @media only screen and (max-width : 1200px)
-	/**/
+  .list-arrow li
+    max-width: none
+
+  .author-content
+    max-width: 620px
+
+    h2
+      margin: 0 0 30px
+
+  .list-decor
+    font-size: 20px
+
+  .marathon-content
+    padding: 30px
+
+  .marathon h2
+    font-size: 30px
+    margin: 0 0 30px
+
+  .form label
+    max-width: 280px
 
 
-/* Medium Devices, Desktops */
+  input
+    height: 80px
+    font-size: 20px
+
+  .btn
+    padding-top: 10px
+    padding-bottom: 10px
+    padding-right: 50px
+
+  .btn-title
+    font-size: 26px
+    margin: 0 0 4px
+
+  .marathon
+    padding: 60px 0
+
+
+  .advantages-box
+    max-width: 33.3%
+    font-size: 24px
+
+  .advantages-box__icon
+    margin: 0 auto 20px
+
+  .strengthening-img
+    width: 700px
+
+  .strengthening-content
+    font-size: 20px
+    max-width: 450px
+    p
+      margin: 0 0 20px
+    h3
+      font-size: 26px
+      margin: 0 0 20px
+
+  .main-img
+    max-width: 450px
+
+  .info-box
+    margin: 30px 0
+    font-size: 18px
+
+  .main-content h3
+    font-size: 30px
+
+  .text-decor:before
+    width: 126px
+    height: 50px
+
+
+
 @media only screen and (max-width : 992px)
-	/**/
+  .callback-content
+    padding: 30px 10px 30px 30px
+    h2
+      font-size: 30px
+    .box-text
+      font-size: 18px
 
+  .callback-content h2 .text-decor:before
+    width: 150px
+
+  .history
+    padding: 40px 0
+
+  .history-slider-box
+    width: 400px
+    padding: 40px 30px
+
+  .history-slider-box__body
+    font-size: 16px
+
+  .history-slider-box__photo
+    margin: -94px auto 0
+
+  .history h2, .author-content h2
+    font-size: 30px
+
+  .author-content
+    max-width: none
+
+  .list-arrow
+    font-size: 20px
+    li
+      &:before
+        top: 0
+
+  .author-img
+    margin: 0 auto
+    order: 1
+
+  .form label
+    max-width: 48%
+    margin: 0 0 15px
+
+  .form
+    justify-content: space-between
+    button
+      margin: 0 auto
+
+  .strengthening-img
+    max-width: 600px
+
+  .main-img
+    max-width: 280px
+    margin: 0 0 0 auto
+
+  main
+    .container
+      align-items: flex-end
+
+  .main-content
+    max-width: 465px
 
 /* Small Devices, Tablets */
+@media only screen and (max-width : 930px)
+  .marathon-content
+    width: 100%
+    padding: 30px
+
+  .marathon-img
+    margin: 0 auto
+    width: 100%
+
+  .marathon-wrapper
+    max-width: 440px
+    margin: 0 auto 30px
+    width: 100%
+
+  .marathon-content .text-decor:before
+    width: 127px
+    height: 34px
+
+@media only screen and (max-width : 850px)
+  .strengthening-img
+    width: 100%
+    margin: 0 auto
+    order: 1
+
+  .strengthening-content
+    max-width: none
+    margin: 20px auto
+
+  .strengthening
+    padding: 50px 0 0
+
+  h2
+    font-size: 30px
+
+  .strengthening:before
+    display: none
+
 @media only screen and (max-width : 768px)
-	/**/
+  .callback-img
+    display: none
 
+  .callback-content
+    width: 100%
+    padding: 0
+    &:before
+      display: none
+    .form
+      margin: 0 auto
+      .btn-accent
+        padding: 14px 40px 14px 70px
+        -webkit-background-size: 70%
+        background-size: 70%
+        background-position: calc(50% - 165px) center
+
+  .callback
+    box-shadow: -11px 0px 33px 0 rgba(56, 56, 56, 0.18)
+    padding: 30px 0
+
+  .advantages:before
+    display: none
+
+  .advantages-box
+    max-width: 50%
+    font-size: 20px
+    margin: 0 0 40px
+
+  .advantages h2
+    font-size: 30px
+
+  .advantages h3
+    font-size: 26px
+    margin: 20px auto 30px
+
+  .advantages
+    padding: 100px 0 70px
+
+  header
+    padding: 20px 0
+
+  .part
+    font-size: 40px
+
+  .subtitle-header
+    font-size: 18px
+    max-width: 350px
+
+  .main-img
+    position: absolute
+    bottom: 0
+    right: 0
+
+  .main-content
+    position: relative
+    z-index: 1
+
+  h1
+    font-size: 60px
+    margin: 0 0 20px
+
+  main
+    padding: 180px 0 0
+
+  .info-box
+    letter-spacing: 0
+    font-size: 16px
 
 /* Extra Small Devices, Phones */
+@media only screen and (max-width : 660px)
+  .form label
+    max-width: none
+
+  h1
+    font-size: 50px
+
+  .main-content
+    max-width: 360px
+    h3
+      font-size: 26px
+
+  .main-img
+    max-width: 200px
+
+@media only screen and (max-width : 575px)
+  .author-content .text-decor:before
+    width: 140px
+    height: 70px
+
+  .text-decor
+    margin: 0 5px
+
+  .advantages-box
+    max-width: none
+
+  .subtitle-header
+    max-width: none
+    margin: 10px auto 0
+    order: 1
+
+  .part
+    margin: 0 auto
+
+  .info-box
+    max-width: 260px
+    br
+      display: none
+
+  main
+    padding: 220px 0 0
+
 @media only screen and (max-width : 480px)
-	/**/
+  .history-slider-box
+    width: 300px
+    padding: 40px 20px
+    &:before, &:after
+      display: none
 
+  .btn
+    padding: 10px 20px 10px 70px
+    background-position: calc(50% - 160px) center
+    -webkit-background-size: 70%
+    background-size: 70%
+
+  .info-box
+    font-size: 14px
+    max-width: 195px
+
+  .info-icon
+    width: 25px
+    min-width: 25px
+
+  .text-decor:before
+    width: 110px
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
+@media only screen and (max-width : 420px)
+  .main-img
+    position: relative
+    margin: 0 0 0 auto
+
+  .info-box
+    max-width: none
 
 
-/*==========  Mobile First  ==========*/
+  .main-content
+    max-width: none
 
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
+  h1
+    font-size: 40px
 

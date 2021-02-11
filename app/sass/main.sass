@@ -257,13 +257,14 @@ main
 .text-decor
   position: relative
   margin: 0 10px
+  display: inline-block
   &:before
     content: ''
     position: absolute
     width: 158px
     height: 53px
     left: 50%
-    top: -15px
+    top: -10px
     transform: translate(-50%,0)
     background: url("../img/decor-text.png") no-repeat center
       size: 100%
@@ -294,6 +295,7 @@ main
 
 //strengthening
 .strengthening
+  z-index: 1
   position: relative
   padding: 85px 0 0
   background: url("../img/bg.jpg") no-repeat center
@@ -470,6 +472,7 @@ main
         size: cover
       width: 144px
       height: 40px
+      top: -7px
 
 .marathon-img
   width: 50%
@@ -487,7 +490,7 @@ main
     size: cover
   color: #fff
   .container
-    align-items: flex-start
+    align-items: flex-end
     justify-content: space-between
 
 .author-img
@@ -771,9 +774,9 @@ main
       font-size: 24.5px
     .btn-accent
       padding: 14px 40px 14px 90px
-      margin: 0 0 6px
       background: #fe7b56 url("../img/btn-img.png") no-repeat calc(50% - 185px) center
         size: 75%
+      margin: 0
     .btn-text
       font-size: 17px
 
@@ -784,6 +787,9 @@ main
   justify-content: flex-end
   img
     min-width: 901px
+    height: 100%
+    object-fit: cover
+
 
 
 
