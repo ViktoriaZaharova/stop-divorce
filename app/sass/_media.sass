@@ -26,19 +26,30 @@
     max-width: none
 
   .author-content
-    max-width: 620px
+    max-width: none
+    margin: 0 auto 50px
 
+    ul
+      margin: 0 auto
+      max-width: 720px
+      width: 100%
     h2
-      margin: 0 0 30px
+      text-align: center
+      margin: 0 0 50px
+
+  .author-img
+    order: 1
+    margin: 0 auto
 
   .list-decor
-    font-size: 20px
+    font-size: 18px
+
 
   .marathon-content
     padding: 30px
 
   .marathon h2
-    font-size: 30px
+    font-size: 34px
     margin: 0 0 30px
 
   .form label
@@ -46,17 +57,7 @@
 
 
   input
-    height: 80px
-    font-size: 20px
-
-  .btn
-    padding-top: 10px
-    padding-bottom: 10px
-    padding-right: 50px
-
-  .btn-title
-    font-size: 26px
-    margin: 0 0 4px
+    height: 96px
 
   .marathon
     padding: 60px 0
@@ -73,7 +74,7 @@
     width: 700px
 
   .strengthening-content
-    font-size: 20px
+    font-size: 22px
     max-width: 450px
     p
       margin: 0 0 20px
@@ -98,13 +99,6 @@
 
 
 @media only screen and (max-width : 992px)
-  .callback-content
-    padding: 30px 10px 30px 30px
-    h2
-      font-size: 30px
-    .box-text
-      font-size: 18px
-
   .callback-content h2 .text-decor:before
     width: 150px
 
@@ -127,11 +121,8 @@
   .author-content
     max-width: none
 
-  .list-arrow
-    font-size: 20px
-    li
-      &:before
-        top: 0
+  .author
+    background: #009a7b
 
   .author-img
     margin: 0 auto
@@ -149,9 +140,7 @@
   .strengthening-img
     max-width: 600px
 
-  .main-img
-    max-width: 280px
-    margin: 0 0 0 auto
+
 
   main
     .container
@@ -159,6 +148,32 @@
 
   .main-content
     max-width: 465px
+
+  .callback-img
+    display: none
+
+  .callback-content
+    width: 100%
+    padding: 0
+    &:before
+      display: none
+    .form
+      margin: 0 auto
+      max-width: 420px
+      .btn-accent
+        margin: 0 auto
+        padding: 18px 63px 18px 122px
+
+      label
+        width: 100%
+        max-width: none
+
+
+  .callback
+    box-shadow: -11px 0px 33px 0 rgba(56, 56, 56, 0.18)
+    padding: 50px 0
+
+
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 930px)
@@ -176,8 +191,9 @@
     width: 100%
 
   .marathon-content .text-decor:before
-    width: 127px
-    height: 34px
+    width: 90px
+    height: 25px
+    top: -2px
 
 @media only screen and (max-width : 850px)
   .strengthening-img
@@ -193,38 +209,19 @@
     padding: 50px 0 0
 
   h2
-    font-size: 30px
+    font-size: 9vw
 
   .strengthening:before
     display: none
 
 @media only screen and (max-width : 768px)
-  .callback-img
-    display: none
-
-  .callback-content
-    width: 100%
-    padding: 0
-    &:before
-      display: none
-    .form
-      margin: 0 auto
-      .btn-accent
-        padding: 14px 40px 14px 70px
-        -webkit-background-size: 70%
-        background-size: 70%
-        background-position: calc(50% - 165px) center
-
-  .callback
-    box-shadow: -11px 0px 33px 0 rgba(56, 56, 56, 0.18)
-    padding: 30px 0
 
   .advantages:before
     display: none
 
   .advantages-box
     max-width: 50%
-    font-size: 20px
+    font-size: 22px
     margin: 0 0 40px
 
   .advantages h2
@@ -255,33 +252,56 @@
   .main-content
     position: relative
     z-index: 1
+    padding: 0 0 100px
 
   h1
     font-size: 60px
     margin: 0 0 20px
 
-  main
-    padding: 180px 0 0
-
   .info-box
     letter-spacing: 0
     font-size: 16px
 
+  .main-img
+    width: 50vw
+    left: unset
+    right: 0
+
+  .main-header .container
+    flex-direction: column
+    align-items: flex-start
+
+  .part
+    order: -1
+    margin: 0 0 30px
+    font-size: 32px
+
+  main
+    padding: 30px 0 0
+
+  .info-box
+    margin: 30px 0 0
+
+  .marathon
+    padding: 40px 0
+
+  .author
+    padding: 40px 0 0
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 660px)
-  .form label
-    max-width: none
+  .form
+    flex-direction: column
+    align-items: center
+    label
+      max-width: 336px
 
-  h1
-    font-size: 50px
 
-  .main-content
-    max-width: 360px
-    h3
-      font-size: 26px
+  //.main-content
+  //  max-width: 360px
+  //  h3
+  //    font-size: 26px
 
-  .main-img
-    max-width: 200px
 
 @media only screen and (max-width : 575px)
   .author-content .text-decor:before
@@ -295,20 +315,28 @@
     max-width: none
 
   .subtitle-header
-    max-width: none
-    margin: 10px auto 0
-    order: 1
+    margin: 0 auto
+    text-align: center
 
   .part
-    margin: 0 auto
+    margin: 0 auto 30px
 
   .info-box
-    max-width: 260px
     br
       display: none
 
-  main
-    padding: 220px 0 0
+  .main-content
+    padding-bottom: 60vw
+    max-width: none
+    flex-direction: column
+    align-items: center
+    display: flex
+    h3
+      text-align: center
+      margin: 0 0 30px
+
+  input
+    height: 80px
 
 @media only screen and (max-width : 480px)
   .history-slider-box
@@ -317,15 +345,21 @@
     &:before, &:after
       display: none
 
-  .btn
-    padding: 10px 20px 10px 70px
-    background-position: calc(50% - 160px) center
-    -webkit-background-size: 70%
-    background-size: 70%
+  .btn, .callback-content .form .btn-accent
+    width: calc(100% - 4px)
+    padding: 14px 14vw 14px 30vw
+    background-position: -160px center
 
-  .info-box
-    font-size: 14px
-    max-width: 195px
+  .callback-content .form .btn-accent
+    -webkit-background-size: 280px
+    background-size: 280px
+
+  .btn-title, .callback-content .form .btn-title
+    font-size: 5vw
+
+  .btn-text, .callback-content .form .btn-text
+    font-size: 6vw
+
 
   .info-icon
     width: 25px
@@ -334,19 +368,10 @@
   .text-decor:before
     width: 110px
 
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 420px)
-  .main-img
-    position: relative
-    margin: 0 0 0 auto
-
-  .info-box
-    max-width: none
-
+  h1
+    font-size: 15vw
 
   .main-content
-    max-width: none
-
-  h1
-    font-size: 40px
-
+    h3
+      font-size: 6vw
+      line-height: 1.8

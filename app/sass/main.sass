@@ -199,17 +199,7 @@ button
   letter-spacing: -0.86px
   font-style: italic
 
-
-//header
-header
-  position: absolute
-  width: 100%
-  z-index: 1
-  padding: 37px 0
-  .container
-    align-items: center
-    justify-content: space-between
-
+//main
 .subtitle-header
   max-width: 460px
   width: 100%
@@ -236,15 +226,26 @@ header
   border-radius: 5px
 
 
-//main
+
 main
   background: #fcf8e3 url("../img/bg1.png") no-repeat center top
     size: cover
-  padding: 222px 0 0
+  padding: 40px 0 0
+  .container
+    align-items: flex-end
+
+.main-header
+  margin: 0 0 84px
+  width: 100%
+  .container
+    align-items: center
+    justify-content: space-between
 
 .main-content
   max-width: 486px
   width: 100%
+  position: relative
+  z-index: 3
   h3
     margin: 0 0 41px
     font-size: 36px
@@ -275,9 +276,10 @@ main
   display: flex
   align-items: center
   justify-content: center
-  position: relative
-  z-index: 2
   margin: 0 0 0 25px
+  left: calc(50% - 100px)
+  bottom: 0
+  position: absolute
 
 .info-box
   display: flex
