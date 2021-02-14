@@ -1,6 +1,12 @@
 @import "vars"
 
 /*==========  Desktop First  ==========*/
+@media only screen and (min-width: 992px) and (max-width: 1450px)
+  .container
+    max-width: 80vw
+    padding-left: 0.9375vw
+    padding-right: 0.9375vw
+
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1500px)
@@ -130,6 +136,8 @@
   .author
     background: #009a7b
     margin: 0
+    .container
+      flex-wrap: wrap
 
   .author-content
     max-width: none
@@ -162,7 +170,8 @@
   .strengthening-img
     max-width: 600px
 
-
+  .strengthening .wrapper
+    flex-wrap: wrap
 
   main
     .container

@@ -388,6 +388,9 @@ main {
     bottom: -100px;
     background: url("../img/decor1.png") no-repeat center;
       background-size: contain; }
+  .strengthening .wrapper {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; }
 
 .wrapper {
   width: 100%;
@@ -583,7 +586,7 @@ main {
   .form label {
     max-width: 345px;
     width: 100%;
-    margin: 0 20px 0 0; }
+    margin: 0 20px 10px 0; }
 
 .marathon-content {
   width: 50%;
@@ -607,6 +610,11 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   margin: -15px -5px 0 0; }
+  .marathon-img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
 
 .author {
   margin: -70px 0 0;
@@ -621,7 +629,9 @@ main {
             align-items: flex-start;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; }
 
 .author-img {
   max-width: 590px;
@@ -971,6 +981,12 @@ main {
        object-fit: cover; }
 
 /*==========  Desktop First  ==========*/
+@media only screen and (min-width: 992px) and (max-width: 1450px) {
+  .container {
+    max-width: 80vw;
+    padding-left: 0.9375vw;
+    padding-right: 0.9375vw; } }
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1500px) {
   .callback-img {
@@ -1069,6 +1085,9 @@ main {
   .author {
     background: #009a7b;
     margin: 0; }
+    .author .container {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
   .author-content {
     max-width: none;
     margin: 0 auto 50px; }
@@ -1098,6 +1117,9 @@ main {
       margin: 0 auto; }
   .strengthening-img {
     max-width: 600px; }
+  .strengthening .wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
   main .container {
     -webkit-box-align: end;
         -ms-flex-align: end;

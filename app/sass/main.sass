@@ -311,6 +311,8 @@ main
     bottom: -100px
     background: url("../img/decor1.png") no-repeat center
       size: contain
+  .wrapper
+    flex-wrap: nowrap
 
 .wrapper
   width: 100%
@@ -463,7 +465,7 @@ main
   label
     max-width: 345px
     width: 100%
-    margin: 0 20px 0 0
+    margin: 0 20px 10px 0
 
 .marathon-content
   width: 50%
@@ -482,7 +484,10 @@ main
   align-items: flex-start
   justify-content: center
   margin: -15px -5px 0 0
-
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
 
 //author
 .author
@@ -495,6 +500,7 @@ main
   .container
     align-items: flex-start
     justify-content: space-between
+    flex-wrap: nowrap
 
 .author-img
   max-width: 590px
